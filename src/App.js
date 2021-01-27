@@ -7,19 +7,20 @@ function App() {
   const [boxColor, setBoxColor] = useState(
     'goldenrod',
   ); /*creating a state variable called boxColor*/
+  //const [buttonText, setButtonText] = useState('');
   return (
     <div>
       <header className="App-header">
         <h1 className="App">Random Color Generator</h1>
       </header>
 
-      <div className="App-body">
-        {/* prints out color: and the boxColor */}
-        color: {boxColor};
+      <section className="App-body">
+        {/* prints out color: and the boxColor, removed color = {boxColor} so that it won't be printed twice*/}
+
         <br />
         <div className="App-box" style={{ backgroundColor: boxColor }}></div>
-        <button className="App-button-hex"></button>
-      </div>
+        <button className="App-button-hex">color: {boxColor};</button>
+      </section>
 
       <footer className="App-footer">
         <button
