@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 import randomize from './randomize.js';
-/*import randomColor from 'randomcolor';  to call it use randomcolor() */
 
 function App() {
   const [boxColor, setBoxColor] = useState(
     'goldenrod',
-  ); /*creating a state variable called boxColor*/
-  //const [buttonText, setButtonText] = useState('');
+  ); /* creating a state variable called boxColor*/
+
   return (
     <div>
       <header className="App-header">
@@ -18,7 +17,7 @@ function App() {
         {/* prints out color: and the boxColor, removed color = {boxColor} so that it won't be printed twice*/}
 
         <br />
-        <div className="App-box" style={{ backgroundColor: boxColor }}></div>
+        <div className="App-box" style={{ backgroundColor: boxColor }} />
         <button className="App-button-hex">color: {boxColor};</button>
       </section>
 
@@ -26,9 +25,9 @@ function App() {
         <button
           className="App-button"
           onClick={() => {
-            const color = randomize(); /*setting value for color through randomize*/
+            const color = randomize(); /* setting value for color through randomize*/
             console.log(color);
-            setBoxColor(color); /*updating the state variable*/
+            setBoxColor(color); /* updating the state variable*/
           }}
         >
           Randomize!
