@@ -9,30 +9,29 @@ function App() {
 
   return (
     <div>
-      <header className="App-header">
-        <h1 className="App">Random Color Generator</h1>
+      <header className="app-header">
+        <h1 className="app">Random Color Generator</h1>
       </header>
 
-      <section className="App-body">
+      <section className="app-body">
         {/* prints out color: and the boxColor, removed color = {boxColor} so that it won't be printed twice*/}
 
         <br />
-        <div className="App-box" style={{ backgroundColor: boxColor }} />
-        <button className="App-button-hex">color: {boxColor};</button>
-      </section>
-
-      <footer className="App-footer">
+        <div className="app-box" style={{ backgroundColor: boxColor }} />
+        <button className="app-button-hex">color: {boxColor}</button>
         <button
-          className="App-button"
+          className="app-button-hex"
           onClick={() => {
             const color = randomize(); /* setting value for color through randomize*/
-            console.log(color);
+
             setBoxColor(color); /* updating the state variable*/
           }}
         >
           Randomize!
         </button>
-      </footer>
+      </section>
+
+      <footer className="app-footer" />
     </div>
   );
 }

@@ -1,8 +1,8 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   /* min-height: 100vh;*/
   display: flex;
@@ -13,7 +13,7 @@
   color: white;
 }
 
-.App-footer {
+.app-footer {
   background-color: #282c34;
   /* min-height: 100vh;*/
   height: 20vh;
@@ -25,7 +25,7 @@
   color: white;
 }
 
-.App-body {
+.app-body {
   background-color: dimgray;
   min-height: 80vh;
   align-items: center;
@@ -35,14 +35,7 @@
   justify-content: center;
 }
 
-.App-button {
-  height: 12vh;
-  width: 24vh;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.App-box {
+.app-box {
   width: 350px;
   height: 350px;
   margin: 50px;
@@ -53,13 +46,12 @@
   background-color: goldenrod;
 }
 
-.App-button-hex {
+.app-button-hex {
   height: 10vh;
   width: 20vh;
   font-size: 20px;
   font-weight: bold;
   border: 5px solid black;
-
-  margin-left: 0vh;
+  margin-left: 3vh;
 }
 /* margin-right: 25px; */
